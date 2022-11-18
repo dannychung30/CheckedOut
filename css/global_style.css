@@ -5,4 +5,25 @@
 
 html, body {
   font-family: Montserrat;
+  background: #F2F2F2;
+}
+
+form {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+form * {
+  font-family: Montserrat;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+button {
+  color: white;
+  background: #18A0FB;
+  border-radius: 6px;
+  border-color: transparent;
+}
+
+button:hover {
+  cursor: pointer;
 }
