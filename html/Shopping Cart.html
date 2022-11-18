@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="ShoppingCart-Style.css" type="text/css">
+    <title>Your Shopping Cart</title>
+</head>
+
+
+<body>
+    <!--Header Line -->
+    <div class="pageHeader">
+        <h1>Your Cart
+            <span id="count"></span>
+            <!--Count placeholder -->
+            <span id="numItems"> &nbsp items</span>
+        </h1>
+
+        <!-- Table of Items in Cart -->
+        <div>
+            <table class="cartItems">
+                <tr class="menuItem">
+                    <td><img src="trash.png"></td>
+                    <td><img id="itemPhoto"></td>
+                    <td id="name_description">
+                        <h3>"ITEM NAME"</h3>
+                        <h4>"DESCRIPTION"</h4>
+                    </td>
+                    <td id="cost">
+                        <h3 id="itemsCost">$0.00</h3>
+                    </td>
+                    <td id="quantity">
+                        <form>
+                            <select name="quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </form>
+                    </td>
+                    <td id="cost">
+                        <h3 id="totalItemsCost">$0.00</h3>
+                    </td>
+                </tr>
+                
+
+            </table>
+            <!-- Special Instructions Box -->
+            <form>
+                <label>Special Instructions:</label></br><input type = "text" rows = "3" id = "instructions"> 
+            </form>
+            <!-- Back to Cart button -->
+            <button id="back-button">Back to Cart</button>
+            <!-- Update Cart button -->
+            <button id="updateCart-button">Update Cart</button>
+
+        </div>
+    </div>
+
+
+
+    <!--Totals -->
+    <div class="totalsBox">
+        <table>
+            <tr>
+                <td>Subtotal:</td>
+                <td>$</td>
+            </tr>
+            <tr>
+                <td>Estimated Tax:</td>
+                <td>$</td>
+            </tr>
+            <tr>
+                <td>Estimated Total:</td>
+                <td>$</td>
+            </tr>
+        </table>
+        <!--Checkout button -->
+        <button id="checkout-button">Checkout</button>
+    </div>
+
+</body>
+
+</html>
