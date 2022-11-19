@@ -17,6 +17,7 @@ form * {
 }
 
 button {
+  font-family: Montserrat;
   color: white;
   background: #18A0FB;
   border-radius: 6px;

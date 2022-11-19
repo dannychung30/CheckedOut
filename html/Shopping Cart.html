@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="ShoppingCart-Style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/ShoppingCart-Style.css" type="text/css">
+    <link rel="stylesheet" href="../css/global_style.css" type="text/css">
     <title>Your Shopping Cart</title>
 </head>
 
@@ -31,7 +33,7 @@
                         <h3 id="itemsCost">$0.00</h3>
                     </td>
                     <td id="quantity">
-                        <form>
+                        <form style="border: none;">
                             <select name="quantity">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -44,14 +46,13 @@
                     </td>
                 </tr>
                 
-
             </table>
             <!-- Special Instructions Box -->
-            <form>
+            <br/><form style="border: none;">
                 <label>Special Instructions:</label></br><input type = "text" rows = "3" id = "instructions"> 
-            </form>
+            </form><br/>
             <!-- Back to Cart button -->
-            <button id="back-button">Back to Cart</button>
+            <button id="back-button">&#8592; Back to Menu</button>
             <!-- Update Cart button -->
             <button id="updateCart-button">Update Cart</button>
 
