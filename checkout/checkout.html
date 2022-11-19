@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <h1>Checkout</h1>
+    <form action="POST">
+      <section id="my-account-info">
+        <h2>My Account</h2>
+        <label for="first-name">Name</label>
+        <input required name="first-name" type="text" placeholder="John Doe" />
+        <label for="email">Email</label>
+        <input
+          required
+          name="email"
+          type="email"
+          placeholder="JohnDoe@email.com"
+        />
+      </section>
+      <section id="delivery-method-info">
+        <h2>Delivery Method</h2>
+        <input
+          id="Pick-up"
+          type="radio"
+          name="delivery-method"
+          value="Pick-up"
+        />
+        <label for="Pick-up">Pick-up</label>
+        <input
+          id="Delivery"
+          type="radio"
+          name="delivery-method"
+          value="Delivery"
+        />
+        <label for="Delivery"> Delivery</label>
+        <p>When would you like your order?</p>
+        <input id="now" type="radio" name="delivery-method" value="now" />
+        <label for="now">For now</label>
+        <input id="later" type="radio" name="delivery-method" value="later" />
+        <label for="later">For Later</label>
+        <p>Date and Time:</p>
+        <input type="date" />
+        <input type="time" />
+      </section>
+      <section id="payment-details">
+        <input id="card" type="radio" name="payment-method" />
+        <label for="card">Card</label>
+        <div id="card-details">
+          <input
+            id="card-number"
+            type="text"
+            placeholder="0000 0000 0000 0000"
+          />
+          <input id="card-cvv" type="text" placeholder="CVV" />
+          <input id="card-name" type="text" placeholder="Cardholder Name" />
+          <input id="card-exp" type="text" placeholder="MM / YY" />
+        </div>
+        <input id="cash" type="radio" name="payment-method" />
+        <label for="cash">Cash</label>
+      </section>
+      <section id="billing-details">
+        <h2>Billing Address</h2>
+        <label for="Name">Name</label>
+        <input type="text" placeholder="John Doe" />
+        <label for="Address">Address</label>
+        <input type="text" placeholder="1234 Main Street" />
+        <label for="City">City</label>
+        <input type="text" placeholder="San Diego" />
+        <label for="State">State</label>
+        <input type="text" placeholder="CA" />
+        <label for="Phone">Phone</label>
+        <input type="tel" placeholder="123-456-7890" />
+      </section>
+      <section id="order-details">
+        <h2>Order Details</h2>
+        <h3>Subtotal: <span id="subtotal"></span></h3>
+        <h3>Tax: <span id="tax"></span></h3>
+        <h3>Total: <span id="total"></span></h3>
+      </section>
+    </form>
+  </body>
+</html>
