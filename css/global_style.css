@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+html, body {
+  font-family: Montserrat;
+  background: #F2F2F2;
+}
+
+form {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+form * {
+  font-family: Montserrat;
+}
+
+button {
+  font-family: Montserrat;
+  color: white;
+  background: #18A0FB;
+  border-radius: 6px;
+  border-color: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}

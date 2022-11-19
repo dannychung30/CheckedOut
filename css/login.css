@@ -1,0 +1,28 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+}
+
+#main-div {
+  max-width: 30%;
+  text-align: center;
+  margin: auto;
+}
+
+form * {
+  padding: 10px;
+}
+
+#email-address-login, #password-login {
+  width: 75%;
+}
+
+#email-address-login {
+  margin-top: 20px;
+}
+
+#login-button {
+  width: 40%;
+  margin-bottom: 20px;
+}
