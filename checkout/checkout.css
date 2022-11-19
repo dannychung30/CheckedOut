@@ -1,0 +1,43 @@
+body {
+  display: grid;
+  justify-content: center;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'account payment payment order'
+    'delivery address address order';
+  gap: 2.5rem;
+}
+
+#my-account-info {
+  grid-area: account;
+}
+
+#delivery-method-info {
+  grid-area: delivery;
+}
+
+#payment-details {
+  grid-area: payment;
+}
+
+#billing-details {
+  grid-area: address;
+}
+
+#order-details {
+  grid-area: order;
+}
+
+section {
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
