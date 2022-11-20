@@ -1,0 +1,23 @@
+@charset "UTF-8";
+#join{
+border: 1px none #18a0fb;
+background-color: #18a0fb;
+color: white;
+border-radius: 3px;
+padding: 10px;
+padding-left: 30px;
+padding-right: 30px;
+position:absolute;
+left:46%;
+top:75%;
+}
+
+#join:visited, #join:link{
+color: white;
+}
+
+#join:hover{
+background-color: #1489d6;
+color: gray;
+}
+

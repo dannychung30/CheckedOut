@@ -1,0 +1,67 @@
+@charset "UTF-8";
+#headerbuttons a, #join{
+text-decoration:none;
+}
+
+#homepage, body{
+background-image: url(../photos/homepagebackground.png);
+margin-top:0;
+margin-left:0;
+margin-right:0;
+font-family: 'Montserrat', 'arial';
+}
+
+#logo{
+font-family: 'Comfortaa', 'Montserrat', 'arial';
+padding-right:25px; 
+color: black;
+}
+
+#headerbuttons{
+background-color:white;
+padding:25px;
+}
+
+.nav{
+background-color:white;
+padding:25px;
+}
+
+.nav:hover{
+background-color:gray;
+}
+
+#navigation .nav:visited, #navigation .nav:link{
+color:#18a0fb;
+}
+
+#navigation{
+border-collapse: collapse;
+}
+
+#login{
+border: 1px solid #18a0fb;
+border-radius: 3px;
+padding: 10px;
+padding-left: 30px;
+padding-right: 30px;
+position:absolute;
+left:85%;
+top:2%;
+}
+
+#shct{
+position:absolute;
+left:93.5%;
+top:2.5%;
+}
+
+#shct:hover{
+border: 1px solid #18a0fb;
+border-radius: 3px;
+padding: 3px;
+padding-left: 10px;
+padding-right: 10px;
+margin: -4px;
+margin-left: -11px;
+}
