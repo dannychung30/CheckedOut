@@ -5,17 +5,17 @@
 <title>Homepage</title>
 <style>
 
-header a, #join{
+#headerbuttons a, #join{
 text-decoration:none;
 }
 
-body{
+#homepage{
 background-image: url(../photos/hmpgbkg.png);
 margin:0;
 font-family: 'Montserrat', 'arial';
 }
 
-header{
+#headerbuttons{
 background-color:white;
 padding:25px;
 }
@@ -29,8 +29,12 @@ padding:25px;
 background-color:gray;
 }
 
-a:visited, a:link{
+#navigation a:visited, #navigation a:link{
 color:#18a0fb;
+}
+
+#navigation{
+border-collapse: collapse;
 }
 
 #login{
@@ -79,11 +83,11 @@ color: gray;
 
 </style>
 </head>
-<body>
+<body id = "homepage">
 
-	<header>
+	<header id = "headerbuttons">
 		<table>
-			<tr>
+			<tr id = "navigation">
 				<td>Restaurant</td>
 				<td><a class ="nav" href="Temp.html">Services</a></td>
 				<td><a class ="nav" href="Temp.html">Menus</a></td>
