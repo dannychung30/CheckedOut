@@ -11,13 +11,16 @@ text-decoration:none;
 
 #homepage{
 background-image: url(../photos/homepagebackground.png);
-margin:0;
+margin-top:0;
+margin-left:0;
+margin-right:0;
 font-family: 'Montserrat', 'arial';
 }
 
 #logo{
 font-family: 'Comfortaa', 'Montserrat', 'arial';
 padding-right:25px; 
+color: black;
 }
 
 #headerbuttons{
@@ -34,7 +37,7 @@ padding:25px;
 background-color:gray;
 }
 
-#navigation a:visited, #navigation a:link{
+#navigation .nav:visited, #navigation .nav:link{
 color:#18a0fb;
 }
 
@@ -69,10 +72,6 @@ margin: -4px;
 margin-left: -11px;
 }
 
-#login:hover{
-background-color:gray;
-}
-
 #join{
 border: 1px none #18a0fb;
 background-color: #18a0fb;
@@ -103,12 +102,12 @@ color: gray;
 	<header id = "headerbuttons">
 		<table>
 			<tr id = "navigation">
-				<td id = "logo">Restaurant</td>
+				<td><a id = "logo" href="Homepage.html">Restaurant</a></td>
 				<td><a class ="nav" href="Temp.html">Services</a></td>
 				<td><a class ="nav" href="Menu.html">Menus</a></td>
 				<td><a class ="nav" href="Temp.html">Gallery</a></td>
 				<td><a class ="nav" href="Temp.html">Contact</a></td>
-				<td><a id = "login" href="login.html">Login</a></td>
+				<td><a class ="nav" id = "login" href="login.html">Login</a></td>
 				<td><a href="Shopping Cart.html"><img id = "shct" src="../photos/Shoppingcart.png" alt="shopping cart" width="41.5px"></td>
 			</tr>
 		</table>		
