@@ -18,8 +18,8 @@ padding:10px;
 
 #logo{
 font-family: 'Comfortaa', 'Montserrat', 'arial';
-padding-right:25px; 
-margin:0;
+margin-right:25px; 
+margin-left: 6px;
 color: black;
 font-size: 32px;
 }
@@ -50,8 +50,8 @@ padding-right: 45px;
 margin-right: 15px;
 }
 
-#none{
-padding-right:525px;
+#spacing{
+padding-right:520px;
 }
 
 #shct{
