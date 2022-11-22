@@ -1,0 +1,117 @@
+body {
+  display: grid;
+  justify-content: center;
+}
+
+#header {
+  border-bottom: 5px solid rgb(201, 201, 201);
+}
+
+form {
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'account payment payment order'
+    'delivery address address order';
+  gap: 2.5rem;
+}
+
+#my-account-info {
+  grid-area: account;
+}
+
+#delivery-method-info {
+  grid-area: delivery;
+}
+
+#payment-details {
+  grid-area: payment;
+}
+
+#billing-details {
+  grid-area: address;
+}
+
+#order-details {
+  grid-area: order;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 20px;
+  background-color: white;
+}
+
+section p {
+  align-self: center;
+}
+
+section > span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+section > h2 {
+  align-self: center;
+  border-bottom: 5px solid rgb(201, 201, 201);
+}
+
+section label {
+  color: rgb(84, 84, 84);
+}
+
+a {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: rgb(84, 84, 84);
+}
+
+a:visited {
+  color: rgb(84, 84, 84);
+}
+
+#billing-details span {
+  display: inline;
+}
+
+#billing-details > div {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+#back-to-cart {
+  display: flex;
+  align-items: end;
+}
+
+#card-details {
+  display: grid;
+  grid-template-areas:
+    'number cvv'
+    'name exp';
+  gap: 10px;
+}
+
+#card-number {
+  grid-area: number;
+}
+#card-cvv {
+  grid-area: cvv;
+}
+#card-name {
+  grid-area: name;
+}
+#card-exp {
+  grid-area: exp;
+}
