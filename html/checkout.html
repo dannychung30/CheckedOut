@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../css/HeaderButtons.css" />
+    <link rel="stylesheet" href="../css/global_style.css" />
+    <link rel="stylesheet" href="../css/checkout.css" />
+  </head>
+  <body>
+    <header id = "headerbuttons">
+      <!--  
+      <div id = "navigation">
+          <a id = "logo" href="Homepage.html">Restaurant</a>
+          <a class ="nav" href="Temp.html">Services</a>
+          <a class ="nav" href="Menu.html">Menus</a>
+          <a class ="nav" href="Temp.html">Gallery</a>
+          <a class ="nav" href="Temp.html">Contact</a>
+          <a class ="nav" id = "login" href="login.html">Login</a>
+          <a href="Shopping Cart.html"><img id = "shct" src="../photos/Shoppingcart.png" alt="shopping cart" width="41.5px">
+      </div>
+      -->
+      
+      
+       <table>
+        <tr id = "navigation">
+          <td><a id = "logo" href="Homepage.html">Restaurant</a></td>
+          <td><a class ="nav" href="Temp.html">Services</a></td>
+          <td><a class ="nav" href="Menu.html">Menus</a></td>
+          <td><a class ="nav" href="Temp.html">Gallery</a></td>
+          <td><a class ="nav" href="Temp.html">Contact</a></td>
+          <td id = "spacing"> </td>
+          <td><a class ="nav" id = "login" href="login.html">Log in</a></td>
+          <td><a href="Shopping Cart.html"><img id = "shct" src="../photos/Shoppingcart.png" alt="shopping cart" width="41.5px"></td>
+        </tr>
+      </table>
+        
+    </header>
+    <h1 id='header'>Checkout</h1>
+    <form action="POST">
+      <section id="my-account-info">
+        <h2>My Account</h2>
+          <span style='flex-direction: column;'>
+            <span style='margin-bottom: 20px;'>
+              <label for="first-name">Name</label>
+              <br>
+              <input required required name="first-name" type="text" placeholder="John Doe" />
+            </span>
+            <span>
+              <label for="email">Email</label>
+              <br>
+              <input
+              required
+              name="email"
+              type="email"
+              placeholder="JohnDoe@email.com"
+              />
+            </span>
+          </span>
+      </section>
+      <section id="delivery-method-info">
+        <h2>Delivery Method</h2>
+        <span>
+          <span>
+            <input
+              required
+              id="Pick-up"
+              type="radio"
+              name="delivery-method"
+              value="Pick-up"
+            />
+            <label for="Pick-up">Pick-up</label>
+          </span>
+          <span>
+            <input
+              id="Delivery"
+              type="radio"
+              name="delivery-method"
+              value="Delivery"
+            />
+            <label for="Delivery"> Delivery</label>
+          </span>
+        </span>
+        <p>When would you like your order?</p>
+        <span>
+          <span>
+            <input required id="now" type="radio" name="pick-up" value="now" required/>
+            <label for="now">For now</label>
+          </span>
+          <span>
+            <input
+              id="later"
+              type="radio"
+              name="pick-up"
+              value="later"
+            />
+            <label for="later">For Later</label>
+          </span>
+        </span>
+        <p>Date and Time:</p>
+        <input id='date' required type="date" />
+        <input id='time' required type="time" />
+      </section>
+      <section id="payment-details">
+        <h2>Payment Details</h2>
+        <span style='width: 100%; justify-content: space-evenly;'>
+          <div>
+            <input required id="card" type="radio" name="payment-method" />
+            <label for="card">Card</label>
+          </div>
+          <div id="card-details">
+              <input
+                id="card-number"
+                type="text"
+                placeholder="0000 0000 0000 0000"
+              />
+              <input required id="card-cvv" type="text" placeholder="CVV" />
+              <input required id="card-name" type="text" placeholder="Cardholder Name" />
+              <input required id="card-exp" type="text" placeholder="MM / YY" />
+          </div>
+        </span>
+        <span style='align-self: start;'>
+          <span>
+            <input required id="cash" type="radio" name="payment-method" />
+            <label for="cash">Cash</label>
+          </span>
+        </span>
+      </section>
+      <section id="billing-details">
+        <h2>Billing Address</h2>
+        <div>
+          <span style='flex-grow: 2;'>
+            <label for="Name">Name</label>
+            <br />
+            <input required style='width: 90%;' type="text" placeholder="John Doe" />
+          </span>
+          <br />
+          <span>
+            <label for="Address">Address</label>
+            <br />
+            <input required type="text" placeholder="1234 Main Street" />
+          </span>
+        </div>
+        <div>
+          <span>
+            <label for="City">City</label>
+            <br />
+            <input required type="text" placeholder="San Diego" />
+          </span>
+          <br />
+          <span>
+            <label for="State">State</label>
+            <br />
+            <input required style="width: 20px" type="text" placeholder="CA" />
+          </span>
+          <br />
+          <span>
+            <label for="Zip Code">Zip Code</label>
+            <br />
+            <input required type="text" placeholder="12345" />
+          </span>
+          <br />
+          <span>
+            <label for="Phone">Phone</label>
+            <br />
+            <input required type="tel" placeholder="123-456-7890" />
+          </span>
+        </div>
+      </section>
+      <section id="order-details">
+        <h2>Order Details</h2>
+        <h3>Subtotal: <span id="subtotal"></span></h3>
+        <h3>Tax: <span id="tax"></span></h3>
+        <h3>Total: <span id="total"></span></h3>
+        <button>Place Order</button>
+      </section>
+    </form>
+    <span id='back-to-cart'>
+      <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" height="32px" id="Слой_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path clip-rule="evenodd" d="M31.106,15H3.278l8.325-8.293  c0.391-0.391,0.391-1.024,0-1.414c-0.391-0.391-1.024-0.391-1.414,0l-9.9,9.899c-0.385,0.385-0.385,1.029,0,1.414l9.9,9.9  c0.391,0.391,1.024,0.391,1.414,0c0.391-0.391,0.391-1.024,0-1.414L3.278,17h27.828c0.552,0,1-0.448,1-1  C32.106,15.448,31.658,15,31.106,15z" fill="#121313" fill-rule="evenodd" id="Arrow_Back"/><g/><g/><g/><g/><g/><g/></svg>
+      <a style='align-items: center;' href="/html/Shopping Cart.html">
+        Back to Cart</a>
+      </span>
+  </body>
+</html>
