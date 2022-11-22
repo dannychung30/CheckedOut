@@ -47,12 +47,14 @@ padding: 10px;
 padding-left: 40px;
 padding-right: 40px;
 margin-right: 15px;
+margin-left: 32em;
 }
 
+/*
 #spacing{
-padding-right:539px;
+padding-right:523px;
 }
-
+*/
 #shct{
 border: 1px none;
 border-radius: 3px;
