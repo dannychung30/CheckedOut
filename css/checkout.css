@@ -3,12 +3,16 @@ body {
   justify-content: center;
 }
 
+<<<<<<< HEAD
 #header {
   border-bottom: 5px solid rgb(201, 201, 201);
 }
 
 form {
   border: none;
+=======
+form {
+>>>>>>> da8e418a6433b1d412759757ab240c09e3eb8199
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -43,16 +47,22 @@ section {
   flex-direction: column;
   border: 1px solid gray;
   justify-content: center;
+<<<<<<< HEAD
   align-items: center;
   width: 90%;
   padding: 20px;
   background-color: white;
+=======
+  width: 100%;
+  padding: 20px;
+>>>>>>> da8e418a6433b1d412759757ab240c09e3eb8199
 }
 
 section p {
   align-self: center;
 }
 
+<<<<<<< HEAD
 section > span {
   display: flex;
   justify-content: space-between;
@@ -63,12 +73,24 @@ section > span {
 section > h2 {
   align-self: center;
   border-bottom: 5px solid rgb(201, 201, 201);
+=======
+section span {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section h2 {
+  align-self: center;
+  border-bottom: 5px solid rgb(162, 162, 162);
+>>>>>>> da8e418a6433b1d412759757ab240c09e3eb8199
 }
 
 section label {
   color: rgb(84, 84, 84);
 }
 
+<<<<<<< HEAD
 a {
   font-size: 1.5rem;
   margin-top: 1rem;
@@ -80,10 +102,13 @@ a:visited {
   color: rgb(84, 84, 84);
 }
 
+=======
+>>>>>>> da8e418a6433b1d412759757ab240c09e3eb8199
 #billing-details span {
   display: inline;
 }
 
+<<<<<<< HEAD
 #billing-details > div {
   display: flex;
   justify-content: space-between;
@@ -114,4 +139,9 @@ a:visited {
 }
 #card-exp {
   grid-area: exp;
+=======
+#billing-details div {
+  display: flex;
+  justify-content: space-around;
+>>>>>>> da8e418a6433b1d412759757ab240c09e3eb8199
 }
