@@ -12,6 +12,10 @@ left:46%;
 top:75%;
 }
 
+#homepage, body{
+background-image: url(../photos/homepagebackground.png);
+}
+
 #join:visited, #join:link{
 color: white;
 }

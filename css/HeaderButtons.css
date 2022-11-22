@@ -4,7 +4,6 @@ text-decoration:none;
 }
 
 #homepage, body{
-background-image: url(../photos/homepagebackground.png);
 margin-top:0;
 margin-left:0;
 margin-right:0;
@@ -13,7 +12,7 @@ font-family: 'Montserrat', 'arial';
 
 #headerbuttons{
 background-color:white;
-padding:10px;
+padding:11px;
 }
 
 #logo{
@@ -50,11 +49,6 @@ margin-right: 15px;
 margin-left: 32em;
 }
 
-/*
-#spacing{
-padding-right:523px;
-}
-*/
 #shct{
 border: 1px none;
 border-radius: 3px;
