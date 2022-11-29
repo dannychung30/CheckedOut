@@ -19,14 +19,31 @@
     require_once("config.php");
 
     // required table info
-    $table_name = "";
+    $table_name = "customers";
     $first_name = $_GET['first-name'];
     $last_name = $_GET['last-name'];
     $email = $_GET['email'];
     $password = $_GET['create-password'];
 
     // check to see if this email is already registered
+    $sql = "SELECT * FROM $table_name";
+    $result = $pdo -> query($sql);
+    while ($row = $result -> fetch()) {
+        if ($row['email'] == $email) {
+            exit("<p>The email you entered is already registered.</p><p>Click <a href=''>here</a> to login");
+        }
+    }
 
+    // insert new user's data into customers table
+    $sql = "INSERT INTO $table_name(email, first_name, last_name, password) VALUES('$email','$first_name','$last_name','$password')";
+    $pdo -> exec($sql);
+
+    // retrieving the customer's email to use in next page
+    $sql = "SELECT * FROM $table_name WHERE email = '$email'";
+    $result = $pdo -> query($sql);
+    if ($row = $result -> fetch()) {
+        $email = $row['email'];
+    }
 
     // close connection 
     $pdo = null;
