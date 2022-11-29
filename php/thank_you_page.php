@@ -12,7 +12,7 @@
 <?php
     // checking user's input
     if ($_GET['create-password'] != $_GET['confirm-password']) {
-        exit("<p>Your passwords did not match. Go back to the previous page");
+        exit("<p>Your passwords did not match. Go back to the previous page</p>");
     }
 
     // connecting with database
