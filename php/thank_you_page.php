@@ -50,7 +50,7 @@
 ?>
     <div id="main-div">
         <h1>Thank you for signing up!</h1>
-        <h3><a href="login.html">Click here to login.</a></h3>
+        <h3><a href="../html/login.html">Click here to login.</a></h3>
     </div>
 
 </body>
