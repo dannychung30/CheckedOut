@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +29,11 @@
     $email = $_GET['email'];
     $password = $_GET['create-password'];
 
+    // adding session variables to send across pages
+    $_SESSION['email'] = $email;
+    $_SESSION['first_name'] = $first_name;
+    $_SESSION['last_name'] = $last_name;
+
     // check to see if this email is already registered
     $sql = "SELECT * FROM $table_name";
     $result = $pdo -> query($sql);
@@ -45,12 +54,13 @@
         $email = $row['email'];
     }
 
+
     // close connection 
     $pdo = null;
 ?>
     <div id="main-div">
         <h1>Thank you for signing up!</h1>
-        <h3><a href="../php/login.php">Click here to login.</a></h3>
+        <h3><a href="login.php">Click here to login.</a></h3>
     </div>
 
 </body>

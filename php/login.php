@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +19,7 @@
   <div id="main-div">
     <h1>Login</h1>
     <div id="secondary-div">
-      <form>
+      <form action="Menu.php">
         <input type="email" id="email-address-login" name="email" placeholder="Email Address" required><br /><br />
         <input type="password" id="password-login" name="password" placeholder="Password" required><br /><br />
         <button id="login-button">Log in</button>
