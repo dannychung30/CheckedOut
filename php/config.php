@@ -7,7 +7,7 @@ try{
 
     $pdo=new pdo($connString,$user,$pass);
 
-    echo "Connected Successfully!";
+    //echo "Connected Successfully!";
     
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);//useful during initial development and debugging
 
