@@ -22,7 +22,7 @@
       </form>
       <p>Forgot your password?</p>
       <p><a href="../php/new_customer_signup.php">Create an account</a></p>
-      <p><a href="Homepage.html">&#8592; Back to home</a></p>
+      <p><a href="../html/Homepage.html">&#8592; Back to home</a></p>
     </div>
   </div>
 
