@@ -21,7 +21,7 @@
             <input type="password" id="confirm-password" placeholder="Confirm Password" name="confirm-password" required><br/><br/>
             <button id="create-account">Create Account</button>
         </form>
-        <p><a href="../html/login.html">Already have an account?</a></p>
+        <p><a href="login.php">Already have an account?</a></p>
         <p><a href="../html/Homepage.html">&#8592; Back to home</a></p>
     </div>
 
