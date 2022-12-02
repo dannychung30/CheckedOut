@@ -30,7 +30,7 @@
     $result = $pdo -> query($sql);
     while ($row = $result -> fetch()) {
         if ($row['email'] == $email) {
-            exit("<p>The email you entered is already registered.</p><p>Click <a href='../html/login.html'>here</a> to login");
+            exit("<p>The email you entered is already registered.</p><p>Click <a href='login.php'>here</a> to login");
         }
     }
 
