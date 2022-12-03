@@ -1,3 +1,31 @@
+<?php
+session_start();
+
+require_once('config.php');
+
+if (isset($_GET['email']) && isset($_GET['password'])) {
+    // putting user inputs into variables
+    $email = $_GET['email'];
+    $password = $_GET['password'];
+}
+
+// checking to see if user information is in our database 
+$sql = "SELECT * FROM customers
+        WHERE email = '$email' AND password = '$password'";
+$result = $pdo -> query($sql);
+if (!$row = $result -> fetch()) {
+    exit("<p>Account does not exist</p><br/>
+        <p>Click <a href='new_customer_signup.php'>here</a> to create an account</p>");
+}
+else {
+    $email = $row['email'];
+    $first_name = $row['first_name'];
+    $last_name = $row['last_name'];
+}
+
+// close connection 
+$pdo = null;
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,12 +37,23 @@
     <header id = "headerbuttons">
 		 <table>
 			<tr id = "navigation">
-				<td><a id = "logo" href="Homepage.html">Restaurant</a></td>
-				<td><a class ="nav" href="UnderConstruction.html">Services</a></td>
-				<td><a class ="nav" href="Menu.html">Menus</a></td>
-				<td><a class ="nav" href="UnderConstruction.html">Gallery</a></td>
-				<td><a class ="nav" href="contact.html">Contact</a></td>
-				<td><a class ="nav" id = "login" href="login.html">Log in</a></td>
+				<td><a id = "logo" href="../html/Homepage.html">Restaurant</a></td>
+				<td><a class ="nav" href="../html/UnderConstruction.html">Services</a></td>
+				<td><a class ="nav" href="Menu.php">Menus</a></td>
+				<td><a class ="nav" href="../html/UnderConstruction.html">Gallery</a></td>
+				<td><a class ="nav" href="../html/contact.html">Contact</a></td>
+                <?php 
+                    // checking to see if the user's first name and last name are within the session
+                    if(isset($_GET['email']) && isset($_GET['password'])) {
+                        //replacing Login button with welcome message if user is logged in
+                        echo "<td class='nav'>Welcome $first_name $last_name</td>";
+                        echo "<td class='nav'><a href='logout.php'>Logout</a></td>";
+                    }
+                    else {
+                        // displaying  login message if user is not logged in
+                        echo "<td><a class ='nav' id = 'login' href='login.php'>Log in</a></td>";
+                    }
+                ?>
 				<td><a href="Shopping Cart.html"><img id = "shct" src="../photos/Shoppingcart.png" alt="shopping cart" width="41.5px"></td>
 			</tr>
 		</table>
