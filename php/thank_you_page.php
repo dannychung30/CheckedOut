@@ -47,16 +47,11 @@ session_start();
     $sql = "INSERT INTO $table_name(email, first_name, last_name, password) VALUES('$email','$first_name','$last_name','$password')";
     $pdo -> exec($sql);
 
-    // retrieving the customer's email to use in next page
-    $sql = "SELECT * FROM $table_name WHERE email = '$email'";
-    $result = $pdo -> query($sql);
-    if ($row = $result -> fetch()) {
-        $email = $row['email'];
-    }
-
-
     // close connection 
     $pdo = null;
+    session_start();
+    session_destroy();
+
 ?>
     <div id="main-div">
         <h1>Thank you for signing up!</h1>
