@@ -80,7 +80,7 @@ else {
                 echo "<td><a class ='nav' id = 'login' href='login.php'>Log in</a></td>";
             }
         ?>
-				<td><a href="Shopping Cart.html"><img id = "shct" src="../photos/Shoppingcart.png" alt="shopping cart" width="41.5px"></td>
+				<td><a href="../html/Shopping Cart.html"><img id = "shct" src="../photos/Shoppingcart.png" alt="shopping cart" width="41.5px"></td>
 			</tr>
 		</table>
 	</header>
