@@ -5,7 +5,7 @@ function addToCart() {
   const selectedItems = Array.from(inputs)
     .filter((item) => item.checked)
     .map((item) => {
-      return { name: item.name, price: item.value };
+      return { name: item.name, price: item.value, quantity: 1 };
     });
 
   window.localStorage.setItem('cart', '[]');
