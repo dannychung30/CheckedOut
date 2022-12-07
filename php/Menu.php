@@ -14,8 +14,8 @@ $sql = "SELECT * FROM customers
         WHERE email = '$email' AND password = '$password'";
 $result = $pdo -> query($sql);
 if (!$row = $result -> fetch()) {
-    exit("<p>Account does not exist</p><br/>
-        <p>Click <a href='new_customer_signup.php'>here</a> to create an account</p>");
+  header('Location: ../html/create_account_message.html');
+  exit();
 }
 else {
     $email = $row['email'];
