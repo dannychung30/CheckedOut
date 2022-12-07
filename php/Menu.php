@@ -66,7 +66,7 @@ else {
         <td><a id="logo" href="../html/Homepage.html">Programmer's<br/>Cafe</a></td>
         <td><a class="nav" href="../html/UnderConstruction.html">Services</a></td>
         <td><a class="nav" href="Menu.php">Menus</a></td>
-        <td><a class="nav" href="../htmlUnderConstruction.html">Gallery</a></td>
+        <td><a class="nav" href="../html/UnderConstruction.html">Gallery</a></td>
         <td><a class ="nav" href="../html/contact.html">Contact</a></td>
         <?php 
             // checking to see if the user's first name and last name are within the session
