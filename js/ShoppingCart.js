@@ -2,8 +2,6 @@ const cart = JSON.parse(localStorage.getItem('cart'));
 
 function loadCart() {
   const cartAsHTML = cart.map(({ name, price, quantity }) => {
-    const quantityInput = document.getElementById('quantity-selection');
-
     return `
         <tr class="menuItem">
           <td><img src="../photos/trash.png" /></td>
