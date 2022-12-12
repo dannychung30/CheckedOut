@@ -1,8 +1,4 @@
-body{
-    background-image: url("../photos/../photos/photo-antipasto-platter-italian-food.jpg");
-}
-
 fieldset{
     background-color: white;
-    opacity: .8;  
+    /*opacity: .5;  */
 }

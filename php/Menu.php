@@ -30,31 +30,25 @@ if (!$row = $result->fetch()) {
 
 <head>
   <title>Menu</title>
-  <link rel="stylesheet" type="text/css" href="../css/menu.css" />
   <link rel="stylesheet" type="text/css" href="../css/HeaderButtons.css">
   <link rel="stylesheet" type="text/css" href="../css/global_style.css">
   <script defer src="../scripts/Menu.js"></script>
 
   <style>
-    @font-face {
-      font-family: Montserrat;
-      src: url(../css/fonts/Montserrat/static/Montserrat-Regular.ttf);
-    }
-
-    body,
-    html {
-      font-family: Montserrat;
-      background-image: url("../photos/../photos/photo-antipasto-platter-italian-food.jpg");
-    }
-
     #menu {
       width: 50%;
       margin: auto;
+      margin-top: 10px;
       padding-top: 20px;
       padding-bottom: 20px;
       text-align: center;
-      color: white;
-      background: rgba(66, 66, 66, 0.80);
+      color: gray;
+      /*background: rgba(66, 66, 66, 0.60);*/
+      background-color: #cacaca;
+      border-radius: 74px;
+      background: linear-gradient(225deg, #cacaca, #f0f0f0);
+      box-shadow:  -10px 10px 20px #a4a4a4,
+                    10px -10px 20px #ffffff;
     }
   </style>
 </head>

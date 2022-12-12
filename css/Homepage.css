@@ -1,7 +1,6 @@
 @charset "UTF-8";
 #join{
 border: 1px none #18a0fb;
-background-color: #18a0fb;
 color: white;
 border-radius: 3px;
 padding: 10px;
@@ -17,11 +16,11 @@ background-image: url(../photos/homepagebackground.png);
 }
 
 #join:visited, #join:link{
-color: white;
+    color: white;
 }
 
 #join:hover{
-background-color: #1489d6;
-color: gray;
+    background-color: #1489d6;
+    color: white !important;
 }
 

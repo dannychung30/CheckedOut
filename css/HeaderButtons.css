@@ -1,70 +1,70 @@
 @charset "UTF-8";
 #headerbuttons a, #join{
-text-decoration:none;
+    text-decoration:none;
 }
 
 #homepage, body{
-margin-top:0;
-margin-left:0;
-margin-right:0;
-font-family: 'Montserrat', 'arial';
+    margin-top:0;
+    margin-left:0;
+    margin-right:0;
+    font-family: 'Montserrat', 'arial';
 }
 
 #headerbuttons{
-background-color:white;
-padding:11px;
+    background-color:white;
+    padding:11px;
 }
 
 #logo{
-font-family: 'Comfortaa', 'Montserrat', 'arial';
-margin-right:25px; 
-color: black;
-font-size: 18px;
+    font-family: 'Comfortaa', 'Montserrat', 'arial';
+    margin-right:25px; 
+    color: black;
+    font-size: 18px;
 }
 
 .nav{
-background-color: white;
-padding:25px;
+    background-color: white;
+    padding:25px;
 }
 
 .nav:hover{
-background-color:gray;
+    background-color:grey;
+    color: white !important;
 }
 
 #navigation .nav:visited, #navigation .nav:link{
-color:#18a0fb;
+    color:#18a0fb;
 }
 
 #navigation{
-border-collapse: collapse;
+    border-collapse: collapse;
 }
 
 #login{
-border: 1px solid #18a0fb;
-border-radius: 3px;
-padding: 10px;
-padding-left: 40px;
-padding-right: 40px;
-margin-right: 15px;
-margin-left: 32em;
+    display: flex;
+    justify-content: right;
+    margin-left: 950px;
+    border: 1px solid #18a0fb;
+    border-radius: 3px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px; 
 }
 
 #shct{
-border: 1px none;
-border-radius: 3px;
-padding: 4px;
-padding-left: 10px;
-padding-right: 13px;
-margin-bottom: -4px;
-margin-left: -11px;
+    display: flex;
+    justify-content: right;
+    margin-left: 20px;
+    top: 20px;
+    right: 30px;
 }
 
 #shct:hover{
-border: 1px solid #18a0fb;
-border-radius: 3px;
-padding: 3px;
-padding-left: 10px;
-padding-right: 10px;
-margin-bottom: -4px;
-margin-left: -12px;
+    border: 1px solid #18a0fb;
+    border-radius: 3px;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: -4px;
+    margin-left: -12px;
 }
